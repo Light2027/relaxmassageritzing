@@ -6,9 +6,9 @@ import hungarianFlag from "../Images/hungary.flag.png";
 import styles from "./navbar.module.css";
 
 export default function NavbarComponent() {
-  return <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-transparent">
+  return <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-transparent">
   <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
@@ -25,15 +25,15 @@ export default function NavbarComponent() {
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
-        <li class="nav-item" style={{width: "5% !important"}}>
-          <a class="nav-link" href="#">
-            <Image class="rounded" src={austrianFlag} alt=""/>
-          </a>
-        </li>
-        <li class="nav-item" style={{width: "5% !important"}}>
-          <a class="nav-link" href="#">
-            <Image class="rounded" src={hungarianFlag} alt=""/>
-          </a>
+        <li class="nav-item">
+          <div style={{width:"150px"}} class="d-flex flex-row align-items-center justify-content-center">
+            <a class="nav-link w-50" href="#">
+              <Image class="rounded" src={austrianFlag} alt=""/>
+            </a>
+            <a class="nav-link w-50" href="#">
+              <Image class="rounded" src={hungarianFlag} alt=""/>
+            </a>
+          </div>
         </li>
       </ul>
     </div>
