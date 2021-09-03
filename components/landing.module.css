@@ -1,9 +1,8 @@
 .landingBackground {
+  display: block;
   background-image: url("../Images/landing.background.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  position: absolute;
-  top: 0;
 }
 
 .logo{
