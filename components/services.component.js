@@ -7,7 +7,7 @@ export default function ServicesComponent() {
 
   return <div id="services" className="border-bottom d-flex flex-column justify-content-center">
     <h1 className="text-center mt-2">Services</h1>
-    <div className="border border-2 border-dark bg-white w-25 align-self-center rounded mt-3 mb-5">
+    <div className="border border-2 border-dark bg-white col-11 col-md-6 col-lg-3 align-self-center rounded mt-3 mb-5">
       {services.map((s) => (
         <p key={s.name} className="text-center">{s.name} - {s.duration}</p>
       ))}

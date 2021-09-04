@@ -7,6 +7,8 @@ import hungarianFlag from "../Images/hungary.flag.png";
 
 import styles from "./navbar.module.css";
 
+import Navbar from 'react-bootstrap/Navbar'
+
 export default function NavbarComponent() {
   return <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
   <div className="container-fluid">
