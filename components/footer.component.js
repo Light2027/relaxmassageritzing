@@ -1,5 +1,3 @@
-import vercel from "../Images/powered-by-vercel.svg";
-
 export default function FooterComponent() {
     return <div className="d-flex flex-row justify-content-center align-items-center mb-5">
         <span>
@@ -12,7 +10,7 @@ export default function FooterComponent() {
                 </svg>
             </a>
             <span className="mx-1"/>
-            Created by Istvan Galfi
+            <i>Created by Istvan Galfi</i>
         </span>
     </div>;
   }

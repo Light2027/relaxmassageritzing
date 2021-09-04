@@ -22,10 +22,10 @@ export function GetNavbarContent(){
             contact: "Kontaktdaten",
         },
         "hu":{
-            about: "Rolam",
+            about: "Rólam",
             services: "Kezelések",
-            gallery: "Galeria",
-            contact: "Kontakt Info",
+            gallery: "Galéria",
+            contact: "Elérhetőségek",
         },
     };
 }
@@ -37,7 +37,7 @@ export function GetLandingContent(){
             logoAlt: "Mein Logo.",
         },
         "hu":{
-            backgroundAlt: "Egy nö akinek a hatat maszirozzak.",
+            backgroundAlt: "Egy nö akinek a hàtat maszirozzak.",
             logoAlt: "A Logom.",
         },
     };
@@ -46,14 +46,14 @@ export function GetLandingContent(){
 export function GetAboutContent(){
         return {
         "de":{
-            header: "Hello, mein Name ist Thomas.",
+            header: "Hello, mein Name ist Tommy.",
             aboutMe: "Etwas Über mich.",
             pfpAlt: "Mein Profilbild.",
         },
         "hu":{
-            header: "Hello, a nevem Thomas.",
+            header: "Hello, a nevem Tommy.",
             aboutMe: "Valami rolam.",
-            pfpAlt: "A Profil kèpem.",
+            pfpAlt: "A Profil képem.",
         },
     };
 }
