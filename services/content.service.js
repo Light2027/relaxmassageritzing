@@ -23,7 +23,7 @@ export function GetNavbarContent(){
         },
         "hu":{
             about: "Rolam",
-            services: "Szolgaltatasaim",
+            services: "Kezelések",
             gallery: "Galeria",
             contact: "Kontakt Info",
         },
@@ -81,45 +81,45 @@ export function GetServicesContent(){
         "de":{
             services: [
                 {
-                    name: "1",
-                    category:"1",
-                    duration: 0,
-                    price: 0,
+                    name: "Rückenmassage",
+                    category:"Relax",
+                    duration: 30,
+                    price: 20,
                 },
                 {
-                    name: "2",
-                    category:"1",
-                    duration: 0,
-                    price: 0,
+                    name: "Bein- und Rückenmassage",
+                    category:"Relax",
+                    duration: 60,
+                    price: 30,
                 },
                 {
-                    name: "3",
-                    category:"1",
-                    duration: 0,
-                    price: 0,
+                    name: "Muskelentspannende Rücken- und Hüftmassage",
+                    category:"Intensive",
+                    duration: 30,
+                    price: 20,
                 },
             ],
         },
         "hu":{
             services: [
-            {
-                name: "1",
-                category:"1",
-                duration: 0,
-                price: 0,
-            },
-            {
-                name: "2",
-                category:"1",
-                duration: 0,
-                price: 0,
-            },
-            {
-                name: "3",
-                category:"1",
-                duration: 0,
-                price: 0,
-            },
+                {
+                    name: "Teljes hát masszázs",
+                    category:"Relax",
+                    duration: 30,
+                    price: 7000,
+                },
+                {
+                    name: "Teljes hát és láb masszázs",
+                    category:"Relax",
+                    duration: 60,
+                    price: 10500,
+                },
+                {
+                    name: "Izomlazító hát és csípő masszázs",
+                    category:"Intenzív",
+                    duration: 30,
+                    price: 7000,
+                },
         ],
         },
     };
@@ -138,9 +138,9 @@ export function GetGalleryContent(){
 }
 
 export function GetContactContent(){
-    const tel = "+43 660 1234567";
+    const tel = "+43 650 6611011";
     const email = "massagetommy0315@gmail.com";
-    const address = "7323, Gemeinde Ritzing, Hofstattgasse 38.";
+    const address = "7323, Gemeinde Ritzing, Hofstattgasse 36.";
 
     const navbarContent = GetNavbarContent();
         return {

@@ -12,7 +12,7 @@ export default function AboutComponent() {
   const content = GetAboutContent();
   return <div id="about" className="container-fluid border-bottom">
     <div className="row justify-content-center">
-      <div className="col-12 col-md-4">
+      <div className="col-10 col-md-3">
         <div className="my-3">
           <Image className="border border-2 border-secondary rounded" src={pfp} alt={content[locale].pfpAlt}/>
         </div>
