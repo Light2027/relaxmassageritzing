@@ -1,4 +1,11 @@
+import {useRouter} from 'next/dist/client/router';
+import {GetCommonContent, GetServiceContent} from "../services/content.service";
+
 export default function ServicesComponent() {
+  const router = useRouter();
+  const locale = router.locale;
+  const common = GetCommonContent();
+  const content = GetServiceContent();
   const services = [
     {name: "1", duration: 30},
     {name: "2", duration: 60},

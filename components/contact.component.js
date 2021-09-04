@@ -1,6 +1,11 @@
-// TODO: Write style with media query for the widths size > bootstrap md => 25% otherwise 100%
+import {useRouter} from 'next/dist/client/router';
+import {GetCommonContent, GetContactContent} from "../services/content.service";
 
 export default function ContactComponent() {
+  const router = useRouter();
+  const locale = router.locale;
+  const common = GetCommonContent();
+  const content = GetContactContent();
   return <div id="contact" className="d-flex flex-column mb-5 pb-5">
     <h1 className="text-center mt-2">Contact me</h1>
     <p className="text-center border-bottom border-primary col-11 col-md-6 col-lg-3 align-self-center my-3 pb-5">
