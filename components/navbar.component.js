@@ -12,7 +12,7 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 
 import {useRouter} from 'next/dist/client/router';
-import {GetCommonContent, GetNavbarContent} from "../services/content.service";
+import {germanKey, hungarianKey, GetCommonContent, GetNavbarContent} from "../services/content.service";
 
 export default function NavbarComponent() {
   const router = useRouter();
@@ -31,14 +31,14 @@ export default function NavbarComponent() {
               <Nav className="ms-auto">
                 <Nav.Link href="#about">{content[locale].about}</Nav.Link>
                 <Nav.Link href="#services">{content[locale].services}</Nav.Link>
-                <Nav.Link href="#gallery">{content[locale].gallery}</Nav.Link>
+                <Nav.Link href="#gallery" hidden={true}>{content[locale].gallery}</Nav.Link>
                 <Nav.Link href="#contact">{content[locale].contact}</Nav.Link>
                 <Nav.Item>
                   <div style={{width:"120px"}} className="d-flex flex-row align-items-center justify-content-center">
-                    <Nav.Link className="w-50 me-1" onClick={_ => router.push("/","/",{locale: "de"})}>
+                    <Nav.Link className="w-50 me-1" onClick={_ => router.push("/","/",{scroll: false, locale: germanKey})}>
                       <Image className="rounded" src={austrianFlag} alt=""/>
                     </Nav.Link>
-                    <Nav.Link className="w-50 me-1" onClick={_ => router.push("/","/",{locale: "hu"})}>
+                    <Nav.Link className="w-50 me-1" onClick={_ => router.push("/","/",{scroll: false, locale: hungarianKey})}>
                       <Image className="rounded" src={hungarianFlag} alt=""/>
                     </Nav.Link>
                   </div>

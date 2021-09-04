@@ -9,11 +9,19 @@ import ServicesComponent from "../components/services.component";
 import GalleryComponent from "../components/gallery.component";
 import ContactComponent from "../components/contact.component";
 
+import {useRouter} from 'next/dist/client/router';
+import {GetCommonContent} from "../services/content.service";
+
 export default function IndexPage() {
+  // TODO: Add galery back
+
+  const router = useRouter();
+  const locale = router.locale;
+  const common = GetCommonContent();
   return (
     <div>
       <Head>
-        <title>Relax Massage Ritzing</title>
+        <title>{common[locale].title}</title>
 
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
 
@@ -24,7 +32,7 @@ export default function IndexPage() {
       <LandingComponent />
       <AboutComponent />
       <ServicesComponent />
-      <GalleryComponent />
+      <GalleryComponent/>
       <ContactComponent />
 
       <style global jsx>{`

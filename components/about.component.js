@@ -14,13 +14,13 @@ export default function AboutComponent() {
     <div className="row justify-content-center">
       <div className="col-12 col-md-4">
         <div className="my-3">
-          <Image className="border border-2 border-secondary rounded" src={pfp} alt=""/>
+          <Image className="border border-2 border-secondary rounded" src={pfp} alt={content[locale].pfpAlt}/>
         </div>
       </div>
       <div className="col-12 col-md-7 my-2 d-flex flex-column">
-        <h1>Header</h1>
+        <h1>{content[locale].header}</h1>
         <p>
-          Some Text
+          {content[locale].aboutMe}
         </p>
       </div>
     </div>

@@ -12,8 +12,8 @@ export default function LandingComponent() {
   const locale = router.locale;
   const content = GetLandingContent();
   return (
-    <div className={styles.landingBackground}>
-      <Image className={styles.logo} src={logo} alt=""/>
+    <div className={styles.landingBackground} alt={content[locale].backgroundAlt}>
+      <Image className={styles.logo} src={logo} alt={content[locale].logoAlt}/>
     </div>
   );
 }
