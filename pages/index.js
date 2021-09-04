@@ -8,6 +8,7 @@ import AboutComponent from "../components/about.component";
 import ServicesComponent from "../components/services.component";
 import GalleryComponent from "../components/gallery.component";
 import ContactComponent from "../components/contact.component";
+import FooterComponent from "../components/footer.component";
 
 import {useRouter} from 'next/dist/client/router';
 import {GetCommonContent} from "../services/content.service";
@@ -34,6 +35,7 @@ export default function IndexPage() {
       <ServicesComponent />
       <GalleryComponent/>
       <ContactComponent />
+      <FooterComponent/>
 
       <style global jsx>{`
         body {

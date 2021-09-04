@@ -10,7 +10,7 @@ export default function ServicesComponent() {
   const last = services[services.length - 1];
   return <div id="services" className="border-bottom d-flex flex-column justify-content-center">
     <h1 className="text-center mt-2">{content[locale].title}</h1>
-    <div className="border border-2 border-secondary bg-white col-11 col-md-6 col-xl-3 align-self-center rounded mt-3 mb-5 p-3">
+    <div className="border border-2 border-secondary bg-white col-10 col-md-6 col-xl-3 align-self-center rounded mt-3 mb-5 p-3">
       {services.map((s) => (
         <p key={s.name} className={`${s !== last ? "border-bottom" : ""}`}>
             <strong>{s.name}</strong>

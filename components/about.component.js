@@ -12,13 +12,13 @@ export default function AboutComponent() {
   const content = GetAboutContent();
   return <div id="about" className="container-fluid border-bottom">
     <div className="row justify-content-center">
-      <div className="col-10 col-md-3">
-        <div className="my-3">
-          <Image className="border border-2 border-secondary rounded" src={pfp} alt={content[locale].pfpAlt}/>
+      <div className="col-10 col-md-3 d-flex justify-content-center">
+        <div className="my-3 col-8 col-md-8">
+          <Image className="rounded" src={pfp} alt={content[locale].pfpAlt}/>
         </div>
       </div>
-      <div className="col-12 col-md-7 my-2 d-flex flex-column">
-        <h1>{content[locale].header}</h1>
+      <div className="col-10 col-md-7 my-2 d-flex flex-column">
+        <h1>{content[locale].header} 👋</h1>
         <p>
           {content[locale].aboutMe}
         </p>
