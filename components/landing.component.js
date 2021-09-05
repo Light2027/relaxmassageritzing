@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import styles from "./landing.module.css";
 
-import logo from "../Images/Logo.png";
+import logo from "../Images/Logo.webp";
 
 import {useRouter} from 'next/dist/client/router';
 import {GetLandingContent} from "../services/content.service";

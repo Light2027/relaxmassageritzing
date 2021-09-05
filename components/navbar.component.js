@@ -1,11 +1,9 @@
 import Image from 'next/image'
 
-import brandLogo from "../Images/Logo.brand.png";
+import brandLogo from "../Images/Logo.brand.webp";
 
-import austrianFlag from "../Images/austria.flag.png";
-import hungarianFlag from "../Images/hungary.flag.png";
-
-import styles from "./navbar.module.css";
+import austrianFlag from "../Images/austria.flag.webp";
+import hungarianFlag from "../Images/hungary.flag.webp";
 
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
@@ -36,10 +34,10 @@ export default function NavbarComponent() {
                 <Nav.Item>
                   <div style={{width:"120px"}} className="d-flex flex-row align-items-center justify-content-center">
                     <Nav.Link className="w-50 me-1" onClick={_ => router.push("/","/",{scroll: false, locale: germanKey})}>
-                      <Image className="rounded" src={austrianFlag} alt=""/>
+                      <Image className="rounded" src={austrianFlag} alt={content[locale].austrianFlag}/>
                     </Nav.Link>
                     <Nav.Link className="w-50 me-1" onClick={_ => router.push("/","/",{scroll: false, locale: hungarianKey})}>
-                      <Image className="rounded" src={hungarianFlag} alt=""/>
+                      <Image className="rounded" src={hungarianFlag} alt={content[locale].hungarianFlag}/>
                     </Nav.Link>
                   </div>
                 </Nav.Item>

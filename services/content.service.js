@@ -20,12 +20,16 @@ export function GetNavbarContent(){
             services: "Dienstleistungen",
             gallery: "Galerie",
             contact: "Kontaktdaten",
+            austrianFlag: "Die Österreichische Flagge.",
+            hungarianFlag: "Die Ungarische Flagge.",
         },
         "hu":{
             about: "Rólam",
             services: "Kezelések",
             gallery: "Galéria",
             contact: "Elérhetőségek",
+            austrianFlag: "Az Ausztriai zàszló.",
+            hungarianFlag: "A Magyar zàszló.",
         },
     };
 }
