@@ -13,3 +13,4 @@ The website itself also does not and will not generate any revenue, while it is 
 See license: https://myfreelogomaker.com/what-you-get/  
 *The rights to the logo were also gifted to the recipient of this website.*
 * The Vercel™ logo belongs to Vercel™ and was sourced from: https://vercel.com/design/brands#vercel
+* Favicon was sourced from: https://www.favicon-generator.org/
