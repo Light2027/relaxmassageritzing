@@ -27,6 +27,9 @@ export default function IndexPage() {
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="description" lang="de" content="Rücken-, Hüften- oder Beinschmerzen? Wie wäre eine relaxierende Massage gleich in der Nähe? Buche noch heute einen Termin. Relax Massage Ritzing."/>
+        <meta name="description" lang="hu" content="Hát-, csípő- vagy láb fájás? Mit szólnál egy relaxáló masszáshoz rögtön a közelben? Könyvelj egy idöpontott még ma. Relax Massage Ritzing."/>
       </Head>
 
       <NavbarComponent/>
