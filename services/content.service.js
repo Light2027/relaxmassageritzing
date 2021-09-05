@@ -41,7 +41,7 @@ export function GetLandingContent(){
             logoAlt: "Mein Logo.",
         },
         "hu":{
-            backgroundAlt: "Egy nö akinek a hàtat maszirozzak.",
+            backgroundAlt: "Egy nö akinek a hátat maszirozzak.",
             logoAlt: "A Logom.",
         },
     };
