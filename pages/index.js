@@ -35,7 +35,7 @@ export default function IndexPage() {
       <NavbarComponent/>
       <LandingComponent />
 
-      <h1>Comming Soon...</h1>
+      <h1 class="text-center my-5">Comming Soon...</h1>
       <p hidden={true}>
         Insert components back in here.
       </p>
