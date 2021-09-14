@@ -34,10 +34,12 @@ export default function IndexPage() {
 
       <NavbarComponent/>
       <LandingComponent />
-      <AboutComponent />
-      <ServicesComponent />
-      <GalleryComponent/>
-      <ContactComponent />
+
+      <h1>Comming Soon...</h1>
+      <p hidden={true}>
+        Insert components back in here.
+      </p>
+      
       <FooterComponent/>
 
       <style global jsx>{`
@@ -49,3 +51,12 @@ export default function IndexPage() {
     </div>
   );
 }
+
+
+// To add back in:
+/*
+<AboutComponent />
+<ServicesComponent />
+<GalleryComponent/>
+<ContactComponent />
+*/
